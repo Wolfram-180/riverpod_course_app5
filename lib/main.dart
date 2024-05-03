@@ -29,7 +29,11 @@ class Person {
     String? uuid,
   }) : uuid = uuid ?? const Uuid().v4();
 
-  Person updated([String? name, int? age]) => Person(
+  Person updated([
+    String? name,
+    int? age,
+  ]) =>
+      Person(
         name: name ?? this.name,
         age: age ?? this.age,
         uuid: uuid,
